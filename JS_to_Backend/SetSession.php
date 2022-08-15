@@ -7,6 +7,7 @@
     $query = mysqli_query($conn, $sql);
 
     $row = mysqli_fetch_assoc($query);
+    
     // print_r($row);
     echo '<img src="images/'. $row['img'] .'" alt="" class="profile-image rounded-circle">
           <span class="ml-2">'. $row['fname'] . " " . $row['lname'] .'</span>
